@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Liaison Collective | by Nicole Charbit</title>
+  <meta name="description" content="Music marketing strategies, artist A&R campaigns, spec ads, and visual direction by Nicole Charbit." />
+  
+  <!-- Fonts: Vollkorn, Playfair Display, Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Navigation Bar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" onclick="switchTab('music-mktg')">
+        <span class="brand-main">THE LIAISON COLLECTIVE</span>
+        <span class="brand-sub">BY NIKKI</span>
+      </a>
+
+      <!-- 4 TOP NAVIGATION BARS -->
+      <nav class="nav-menu">
+        <button class="nav-btn active" data-tab="music-mktg" onclick="switchTab('music-mktg')">
+          <i data-lucide="disc"></i> <span>Music Marketing Strategies</span>
+        </button>
+        <button class="nav-btn" data-tab="spec-ads" onclick="switchTab('spec-ads')">
+          <i data-lucide="sparkles"></i> <span>Spec Ads</span>
+        </button>
+        <button class="nav-btn" data-tab="visual-dir" onclick="switchTab('visual-dir')">
+          <i data-lucide="camera"></i> <span>Visual Direction</span>
+        </button>
+        <button class="nav-btn" data-tab="about-skills" onclick="switchTab('about-skills')">
+          <i data-lucide="user"></i> <span>About & Skills</span>
+        </button>
+      </nav>
+
+      <button class="cta-btn-sm" onclick="openContactModal()">
+        <i data-lucide="mail"></i> Get in Touch
+      </button>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="main-content">
+    
+    <!-- Hero Title Header -->
+    <section class="hero-banner">
+      <h1 class="hero-title">The Liaison Collective</h1>
+      <div style="font-size:0.8rem; letter-spacing:3px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase; margin:6px 0 14px;">
+        MARKETING PORTFOLIO BY NICOLE CHARBIT
+      </div>
+      <p class="hero-subtitle">
+        A digital studio showcasing music marketing strategies, spec ad campaigns, and visual direction.
+      </p>
+    </section>
+
+    <!-- ==================== TAB 1: MUSIC MARKETING STRATEGIES ==================== -->
+    <section id="tab-music-mktg" class="tab-pane active">
+      <div class="section-header">
+        <div class="section-label">01 / MUSIC MARKETING & A&R</div>
+        <h2 class="section-title">Music Marketing Strategies</h2>
+        <p class="section-desc">Tailored 360° artist marketing strategies, A&R scouting breakdowns, and custom Spotify playlist curation.</p>
+      </div>
+
+      <!-- Section Title: Featured Artist Campaigns (TOP) -->
+      <div class="margin-bottom-md">
+        <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 4px;">Artists I'm Listening To & Marketing Decks</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Why I chose these artists and how I would build their 360° release campaigns.</p>
+      </div>
+
+      <!-- Artist Marketing Cards Grid -->
+      <div class="grid-2-col">
+        
+        <!-- ARTIST 1: Nate Sib -->
+        <div class="artist-card">
+          <div class="artist-img-wrapper" style="height: 300px;">
+            <img src="nate_sib.png" alt="Nate Sib" style="object-position: center 20%; transform: scale(1.15);" />
+          </div>
+          <div class="artist-content">
+            <h3 class="artist-title">Nate Sib</h3>
+            <p class="artist-genre">Hyperpop / Alternative Electropop / Electroclash</p>
+
+            <div class="qa-block">
+              <strong>Why I Chose Him:</strong>
+              <p>Nate Sib makes groundbreaking alternative electropop and hyperpop, blending synth-driven melodies, glitchy electronic beats, and trap grit with emotive vocals. He has raw star power waiting for a massive global breakthrough.</p>
+            </div>
+
+            <div class="qa-block">
+              <strong>What I Would Do Differently:</strong>
+              <p>1. Humanize his social media (behind-the-scenes production vlogs & Q&As).<br/>
+              2. Establish standalone pop star branding (decoupling from 2hollis).<br/>
+              3. High-fashion underground rockstar visual partnerships.<br/>
+              4. Alt-pop playlist targeting (Anti Pop, Pollinate).<br/>
+              5. Secret warehouse pop-up shows.</p>
+            </div>
+
+            <button class="card-btn-full" onclick="openArtistModal('natesib')">
+              View Full Nate Sib Campaign <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ARTIST 2: Dexter in the Newsagent -->
+        <div class="artist-card">
+          <div class="artist-img-wrapper" style="height: 300px;">
+            <img src="dexter.png" alt="dexter in the newsagent" style="object-position: center top;" />
+          </div>
+          <div class="artist-content">
+            <h3 class="artist-title">dexter in the newsagent</h3>
+            <p class="artist-genre">South London Alt-R&B / Soft-Lit Pop / Indie Soul</p>
+
+            <div class="qa-block">
+              <strong>Why I Chose Her:</strong>
+              <p>Charmaine Ayoku crafts soft-lit pop dreams with an acoustic-soul core. Despite critical acclaim from Pitchfork, COLORS, and The FADER, she remains deeply under-recognized globally relative to her immense talent.</p>
+            </div>
+
+            <div class="qa-block">
+              <strong>What I Would Do Differently:</strong>
+              <p>1. World-building around her "Newsagent" identity (physical newsstand merch pop-ups).<br/>
+              2. Transatlantic US college radio breakout (WZBC push).<br/>
+              3. Y2K South London visual direction & storytelling.<br/>
+              4. Alt-R&B playlist seeding (Lorem, Chilled R&B).<br/>
+              5. Intimate bus stop & corner store acoustic sessions.</p>
+            </div>
+
+            <button class="card-btn-full" onclick="openArtistModal('dexter')">
+              View Full Dexter Campaign <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Add Next Artist Expansion Slot -->
+      <div class="margin-top-md margin-bottom-lg">
+        <div class="add-artist-box" onclick="openContactModal()">
+          <i data-lucide="plus-circle" style="width: 32px; height: 32px; color: var(--accent-terracotta); margin-bottom: 8px;"></i>
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 4px;">+ Suggest / Add Next Artist Strategy</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Continuously scouting indie musicians across SoundCloud and TikTok. Know an artist I should market next?</p>
+        </div>
+      </div>
+
+      <!-- Spotify A&R Playlist & Profile Integration -->
+      <div class="spotify-embed-card margin-top-lg">
+        <div class="spotify-embed-header">
+          <div>
+            <span style="font-size:0.7rem; letter-spacing:2px; color:var(--accent-terracotta); font-weight:600; text-transform:uppercase;">A&R SPOTIFY CURATION • NICOLE'S PLAYLIST</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top:2px;">
+              <i data-lucide="headphones" style="color: var(--accent-terracotta);"></i> Red-Eye Effect AM Archive
+            </h3>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="https://open.spotify.com/user/hrmlyqzr4u8s9i18k8zbhm2o0?si=a21c29866765401f" target="_blank" class="spotify-link-btn" style="background:#1A1917;">
+              <i data-lucide="user"></i> Nicole's Spotify Profile
+            </a>
+            <a href="https://open.spotify.com/playlist/5whYtITUzC5X4TT4b8lUYP?si=b71990a80e1d4ac5" target="_blank" class="spotify-link-btn">
+              <i data-lucide="external-link"></i> Play Playlist on Spotify
+            </a>
+          </div>
+        </div>
+        <div class="spotify-iframe-box">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5whYtITUzC5X4TT4b8lUYP?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== TAB 2: SPEC ADS ==================== -->
+    <section id="tab-spec-ads" class="tab-pane">
+      <div class="section-header">
+        <div class="section-label">02 / BRAND MANAGEMENT & ADVERTISING</div>
+        <h2 class="section-title">Spec Ads</h2>
+        <p class="section-desc">Comprehensive brand campaign pitch decks, cultural positioning blueprints, and projected ROI metrics.</p>
+      </div>
+
+      <div class="grid-3-col">
+        
+        <!-- Glossier -->
+        <div class="campaign-card" onclick="openCampaignModal('glossier')">
+          <div class="campaign-img campaign-img-glossier">
+            <span class="campaign-badge-overlay">EXPERIENTIAL BRAND ACTIVATION</span>
+          </div>
+          <div class="campaign-body">
+            <h3 class="campaign-title">Glossier x Festival Season</h3>
+            <p class="campaign-text"><strong>The Sonic Lounge:</strong> Solving festival skin fatigue with a cooling shade lounge, live DJ listening booths, and exclusive festival-only Glossier merch drops.</p>
+            
+            <div style="background:var(--bg-sand); padding:10px 12px; border-radius:8px; margin-bottom:14px; font-size:0.82rem; color:var(--text-muted); border-left:3px solid var(--accent-terracotta);">
+              <strong>Strategic Impact:</strong> 250k+ festival impressions, 4.2x ROI on pop-up retail sales, 500k+ TikTok posts.
+            </div>
+
+            <div class="campaign-footer">
+              <span>View Full Strategy Deck</span>
+              <span>Explore <i data-lucide="arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spotify -->
+        <div class="campaign-card" onclick="openCampaignModal('spotify')">
+          <div class="campaign-img campaign-img-spotify">
+            <span class="campaign-badge-overlay">INTEGRATED DIGITAL CAMPAIGN</span>
+          </div>
+          <div class="campaign-body">
+            <h3 class="campaign-title">Spotify x Vintage Fashion</h3>
+            <p class="campaign-text"><strong>Rewind & Re-Wear:</strong> Linking music era listening data (90s Grunge, Y2K) to Depop thrifting discounts, campus clothes swaps, and scannable thrift tags.</p>
+            
+            <div style="background:var(--bg-sand); padding:10px 12px; border-radius:8px; margin-bottom:14px; font-size:0.82rem; color:var(--text-muted); border-left:3px solid var(--accent-terracotta);">
+              <strong>Strategic Impact:</strong> 1.5M+ playlist streams, +35% Depop Gen Z account links, campus radio events.
+            </div>
+
+            <div class="campaign-footer">
+              <span>View Full Strategy Deck</span>
+              <span>Explore <i data-lucide="arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Salomon -->
+        <div class="campaign-card" onclick="openCampaignModal('salomon')">
+          <div class="campaign-img campaign-img-salomon">
+            <span class="campaign-badge-overlay">DOCUMENTARY & CREATIVE DIRECTION</span>
+          </div>
+          <div class="campaign-body">
+            <h3 class="campaign-title">Salomon: Urban Acoustic Trail</h3>
+            <p class="campaign-text"><strong>Street Gorpcore Meets Music:</strong> A 35mm documentary film series following street buskers performing across Boston, Miami, NYC, and LA in Salomon XT-6 footwear.</p>
+            
+            <div style="background:var(--bg-sand); padding:10px 12px; border-radius:8px; margin-bottom:14px; font-size:0.82rem; color:var(--text-muted); border-left:3px solid var(--accent-terracotta);">
+              <strong>Strategic Impact:</strong> +42% urban footwear sales, 1.2M+ documentary views, 5.1x ad spend ROI.
+            </div>
+
+            <div class="campaign-footer">
+              <span>View Full Strategy Deck</span>
+              <span>Explore <i data-lucide="arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: VISUAL DIRECTION (NICOLE CHARBIT GRAPHIC DESIGNS) ==================== -->
+    <section id="tab-visual-dir" class="tab-pane">
+      <div class="section-header">
+        <div class="section-label">03 / GRAPHIC DESIGN & VISUAL WORK</div>
+        <h2 class="section-title">Visual Direction & Graphic Design</h2>
+        <p class="section-desc">Original graphic design assets, brand promotion collateral, publication layouts, and visual creative work by Nicole Charbit.</p>
+      </div>
+
+      <div class="visual-grid">
+        
+        <!-- Graphic 1 (LATEST): Supreme Editorial Magazine Spread featuring Frank Ocean -->
+        <div class="visual-card" onclick="openLightbox('supreme_editorial_spread.jpg', 'Supreme Editorial Magazine Spread featuring Frank Ocean')">
+          <div class="visual-card-img-wrapper">
+            <img src="supreme_editorial_spread.jpg" alt="Supreme Editorial Magazine Spread featuring Frank Ocean" />
+          </div>
+        </div>
+
+        <!-- Graphic 2: Dominic Fike - DF3 The Wonders Tour Poster -->
+        <div class="visual-card" onclick="openLightbox('dominic_fike_tour.jpg', 'Dominic Fike: DF3 The Wonders Tour Poster')">
+          <div class="visual-card-img-wrapper">
+            <img src="dominic_fike_tour.jpg" alt="Dominic Fike: DF3 The Wonders Tour Poster" />
+          </div>
+        </div>
+
+        <!-- Graphic 2: Rolling Stone Graphic Design -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e25f2ecc3b980897717a_Rolling%20Stone%20graphic.png', 'Rolling Stone Graphic Design')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e25f2ecc3b980897717a_Rolling%20Stone%20graphic.png" alt="Rolling Stone Graphic Design" />
+          </div>
+        </div>
+
+        <!-- Graphic 3: Boston College TV Graphic Assets -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a72d8026ba32dae83bc484c_Screenshot%202026-08-04%20at%2011.28.15%E2%80%AFPM.png', 'Boston College TV Graphic Assets')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a72d8026ba32dae83bc484c_Screenshot%202026-08-04%20at%2011.28.15%E2%80%AFPM.png" alt="Boston College TV Graphics" />
+          </div>
+        </div>
+
+        <!-- Graphic 4: Promotion BCTV Graphic -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1c29f4fdc4ee52909f6_Promotion%20BCTV.png', 'BCTV Promotional Graphics')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1c29f4fdc4ee52909f6_Promotion%20BCTV.png" alt="BCTV Promotion Graphic" />
+          </div>
+        </div>
+
+        <!-- Graphic 5: BCTV Camera Operating / Broadcast Work -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1acaf39d35e7ec2c61f_BCTV%20camera%20operating.png', 'BCTV Broadcast Direction')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1acaf39d35e7ec2c61f_BCTV%20camera%20operating.png" alt="BCTV Camera Operating" />
+          </div>
+        </div>
+
+        <!-- Graphic 6: Editorial & Journalism Layout I -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df03ef5d7c3f71e846b7fc_Image%2010-2-25%20at%2012.56%E2%80%AFPM.jpeg', 'Journalism & Editorial Layout Design I')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df03ef5d7c3f71e846b7fc_Image%2010-2-25%20at%2012.56%E2%80%AFPM.jpeg" alt="Journalism Layout 1" />
+          </div>
+        </div>
+
+        <!-- Graphic 7: Editorial & Journalism Layout II -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df04d6b7b6fa51f048fb00_Image%2010-2-25%20at%2012.33%E2%80%AFPM.jpeg', 'Journalism & Editorial Layout Design II')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df04d6b7b6fa51f048fb00_Image%2010-2-25%20at%2012.33%E2%80%AFPM.jpeg" alt="Journalism Layout 2" />
+          </div>
+        </div>
+
+        <!-- Graphic 8: Creative Editorial Artwork I -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68e6a9240fdc3c4c58fd3131_Screen%20Shot%202025-10-08%20at%201.26.47%20PM.png', 'Creative Visual Project I')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68e6a9240fdc3c4c58fd3131_Screen%20Shot%202025-10-08%20at%201.26.47%20PM.png" alt="Creative Graphic 1" />
+          </div>
+        </div>
+
+        <!-- Graphic 9: Creative Editorial Artwork II -->
+        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/696faa4b5ef6d1dab2c76418_Screenshot%202026-01-20%20at%2011.16.04%E2%80%AFAM.png', 'Creative Visual Project II')">
+          <div class="visual-card-img-wrapper">
+            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/696faa4b5ef6d1dab2c76418_Screenshot%202026-01-20%20at%2011.16.04%E2%80%AFAM.png" alt="Creative Graphic 2" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TAB 4: ABOUT & SKILLS ==================== -->
+    <section id="tab-about-skills" class="tab-pane">
+      <div class="section-header">
+        <div class="section-label">04 / STRATEGIST PROFILE & CAPABILITIES</div>
+        <h2 class="section-title">About Nicole Charbit & Skills</h2>
+        <p class="section-desc">Creative strategist and brand manager bridging entertainment, fashion, music, and media.</p>
+      </div>
+
+      <!-- About Me Profile Card -->
+      <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:32px; margin-bottom:32px; box-shadow:var(--shadow-sm);">
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div>
+            <span style="font-size:0.75rem; letter-spacing:2px; color:var(--accent-terracotta); font-weight:600; text-transform:uppercase;">BIOGRAPHY</span>
+            <h3 style="font-family:var(--font-serif); font-size:1.8rem; margin-top:2px;">Nicole Charbit</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem; font-style:italic;">Boston College Class of 2028 • Communication Major (Marketing & Journalism Minors)</p>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.98rem; line-height:1.7;">
+            I am a creative strategist and brand marketer with a deep passion for entertainment, fashion, music, and visual storytelling. Based across <strong>Miami, Dubai, and Boston</strong>, I specialize in crafting 360° campaign strategies, spec advertising blueprints, and high-impact visual direction. My goal is to build genuine cultural moments that connect brands and creative projects to loyal, passionate audiences.
+          </p>
+          <div style="display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid var(--border-muted);">
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.88rem; color:var(--text-main);">
+              <i data-lucide="map-pin" style="color:var(--accent-terracotta); width:16px; height:16px;"></i> Miami • Dubai • Boston
+            </div>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.88rem; color:var(--text-main);">
+              <i data-lucide="graduation-cap" style="color:var(--accent-terracotta); width:16px; height:16px;"></i> Boston College Class of '28
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What I Can Do For Your Brand (Marketing Capabilities Grid) -->
+      <div class="margin-bottom-lg">
+        <h3 style="font-family:var(--font-serif); font-size:1.6rem; margin-bottom:16px;">What I Can Do For Your Brand</h3>
+        
+        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;">
+          <!-- Capability 1 -->
+          <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:24px; box-shadow:var(--shadow-sm);">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--bg-subtle); display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="target" style="color:var(--accent-terracotta); width:20px; height:20px;"></i>
+            </div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; margin-bottom:8px;">Campaign Strategy & Pitch Decks</h4>
+            <ul style="padding-left:18px; color:var(--text-muted); font-size:0.9rem; line-height:1.7;">
+              <li style="margin-bottom:6px;">Develop end-to-end 360° marketing campaigns from launch to post-campaign analysis</li>
+              <li style="margin-bottom:6px;">Build comprehensive spec ad pitch decks with clear competitive positioning</li>
+              <li style="margin-bottom:6px;">Set campaign objectives, target audience demographics, and KPI tracking</li>
+              <li>Analyze market data to identify high-growth brand opportunities</li>
+            </ul>
+          </div>
+
+          <!-- Capability 2 -->
+          <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:24px; box-shadow:var(--shadow-sm);">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--bg-subtle); display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="sparkles" style="color:var(--accent-terracotta); width:20px; height:20px;"></i>
+            </div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; margin-bottom:8px;">Brand Management & Culture Positioning</h4>
+            <ul style="padding-left:18px; color:var(--text-muted); font-size:0.9rem; line-height:1.7;">
+              <li style="margin-bottom:6px;">Connect brands authentically to Gen Z and youth subculture trends</li>
+              <li style="margin-bottom:6px;">Develop strategic co-branding partnerships and creator collaborations</li>
+              <li style="margin-bottom:6px;">Drive audience growth through lead capture, email/SMS marketing, and community building</li>
+              <li>Craft compelling brand messaging that resonates with modern consumers</li>
+            </ul>
+          </div>
+
+          <!-- Capability 3 -->
+          <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:24px; box-shadow:var(--shadow-sm);">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--bg-subtle); display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="map-pin" style="color:var(--accent-terracotta); width:20px; height:20px;"></i>
+            </div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; margin-bottom:8px;">Experiential & Event Marketing</h4>
+            <ul style="padding-left:18px; color:var(--text-muted); font-size:0.9rem; line-height:1.7;">
+              <li style="margin-bottom:6px;">Turn physical events into viral organic social media content (TikTok & Reels)</li>
+              <li style="margin-bottom:6px;">Manage on-site event logistics, merchandise drops, and brand touchpoints</li>
+              <li>Create memorable physical brand moments that build lasting customer loyalty</li>
+            </ul>
+          </div>
+
+          <!-- Capability 4 -->
+          <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:24px; box-shadow:var(--shadow-sm);">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--bg-subtle); display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+              <i data-lucide="camera" style="color:var(--accent-terracotta); width:20px; height:20px;"></i>
+            </div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; margin-bottom:8px;">Creative Direction & Content Production</h4>
+            <ul style="padding-left:18px; color:var(--text-muted); font-size:0.9rem; line-height:1.7;">
+              <li style="margin-bottom:6px;">Direct brand styling, art direction, and photography for digital campaigns</li>
+              <li style="margin-bottom:6px;">Produce engaging short-form video content optimized for social platforms</li>
+              <li style="margin-bottom:6px;">Design graphic assets, pitch deck presentations, and social media branding</li>
+              <li>Ensure visual consistency across all digital and physical marketing channels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Skills Bar -->
+      <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:24px; box-shadow:var(--shadow-sm);">
+        <h4 style="font-family:var(--font-serif); font-size:1.2rem; margin-bottom:12px;">Software & Tools</h4>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">Adobe Creative Suite</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">Canva & Figma</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">CapCut</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">Webflow</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">Spotify for Artists</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">Substack & Newsletters</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">TikTok & Instagram Reels</span>
+          <span style="background:var(--bg-sand); padding:6px 14px; border-radius:20px; border:1px solid var(--border-muted); font-size:0.85rem; font-weight:500; color:var(--text-main);">Campaign Analytics</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span style="font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem;">THE LIAISON COLLECTIVE</span>
+    <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 4px;">© 2026 Nicole Charbit. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/nicole-charbit-20236621a" target="_blank"><i data-lucide="linkedin"></i> LinkedIn</a>
+      <a href="https://www.instagram.com/by.nikkiiiiiii/" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
+      <a href="mailto:by.nikki01@gmail.com"><i data-lucide="mail"></i> Email</a>
+      <a href="https://by-nikki.webflow.io/" target="_blank"><i data-lucide="globe"></i> Portfolio</a>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="artistModal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'artistModal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('artistModal')"><i data-lucide="x"></i></button>
+      <div id="artistModalContent"></div>
+    </div>
+  </div>
+
+  <div id="campaignModal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'campaignModal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('campaignModal')"><i data-lucide="x"></i></button>
+      <div id="campaignModalContent"></div>
+    </div>
+  </div>
+
+  <div id="lightboxModal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'lightboxModal')">
+    <div class="lightbox-box">
+      <button class="modal-close" onclick="closeModal('lightboxModal')"><i data-lucide="x"></i></button>
+      <img id="lightboxImg" src="" alt="Enlarged view" />
+    </div>
+  </div>
+
+  <div id="contactModal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'contactModal')">
+    <div class="modal-box" style="max-width:480px;">
+      <button class="modal-close" onclick="closeModal('contactModal')"><i data-lucide="x"></i></button>
+      <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 6px;">Get in Touch</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Send a message to Nicole Charbit at by.nikki01@gmail.com.</p>
+      
+      <form onsubmit="handleFormSubmit(event)" style="display:flex; flex-direction:column; gap:12px;">
+        <input type="text" placeholder="Your Name" required style="padding:10px; border-radius:8px; border:1px solid var(--border-muted);" />
+        <input type="email" placeholder="Email Address" required style="padding:10px; border-radius:8px; border:1px solid var(--border-muted);" />
+        <textarea rows="4" placeholder="Your Message" required style="padding:10px; border-radius:8px; border:1px solid var(--border-muted);"></textarea>
+        <button type="submit" class="card-btn-full" style="margin-top:4px;">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
