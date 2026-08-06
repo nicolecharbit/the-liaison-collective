@@ -157,37 +157,6 @@ const campaignDecks = {
       '48% Conversion Rate to Glossier Email & SMS Club'
     ]
   },
-  spotify: {
-    title: 'Spotify x Vintage Fashion: Rewind & Re-Wear',
-    tagline: 'Connecting Music Eras to Vintage Style Aesthetics',
-    image: 'spotify.png',
-    whyGood: 'Music and personal fashion are intrinsically linked for Gen Z. Over 76% of young consumers state that the music genres they listen to directly dictate their clothing choices, from 90s Grunge and 70s Disco to Y2K Pop and 80s Synthwave. Rewind & Re-Wear bridges Spotify’s streaming data with sustainable thrifting platforms (Depop, Poshmark, and local campus thrift boutiques), delivering personalized aesthetic playlists alongside vintage shopping discounts.',
-    targetAudience: 'College Students & Gen Z (Ages 17–25), thrifting advocates, vintage fashion collectors, indie & retro music listeners.',
-    strategy: [
-      {
-        head: '1. In-App Spotify "Style & Sound" Quiz Engine',
-        detail: 'Deploy an interactive in-app hub where users select their favorite vintage outfit aesthetic. Spotify generates a custom era playlist paired with exclusive Depop thrifting discount codes.'
-      },
-      {
-        head: '2. Campus Pop-Up Clothes Swaps & Student DJ Sets',
-        detail: 'Host physical secondhand clothing swap events on college campuses (Boston College, NYU, UMiami, Harvard). Feature live student radio DJs spinning era-specific vinyl while attendees trade vintage clothes.'
-      },
-      {
-        head: '3. Interactive Scannable Thrift Store Tags',
-        detail: 'Partner with top vintage shops across Boston, Miami, NYC, and LA to attach custom Spotify QR hangtags on thrift clothing. Scanning the tag opens a curated playlist matching that garment’s decade.'
-      },
-      {
-        head: '4. Sustainable Fashion Influencer Campaign',
-        detail: 'Collaborate with top thrifting creators on TikTok & Instagram to showcase "Get Ready With Me: Era Playlist Edition" styling videos.'
-      }
-    ],
-    kpis: [
-      '1.5M+ Interactive Playlist Streams',
-      '+35% Increase in Gen Z Depop In-App Conversions',
-      '75,000+ Thrift Tags Scanned in Boston, NYC, Miami & LA',
-      '4.8x Campaign Engagement Rate vs. Benchmark'
-    ]
-  },
   salomon: {
     title: 'Salomon: Urban Acoustic Trail',
     tagline: 'Streetwise Gorpcore Meets Underground Acoustic Busking Culture',
