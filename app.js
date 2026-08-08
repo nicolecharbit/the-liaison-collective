@@ -115,8 +115,8 @@ function openArtistModal(artistId) {
       </div>
     </div>
 
-    <button class="card-btn-full" onclick="openContactModal()">
-      <i data-lucide="mail"></i> Discuss This Campaign with Nicole
+    <button class="card-btn-full" onclick="closeModal('artistModal'); openContactModal();" style="display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+      <i data-lucide="mail"></i> Discuss This Strategy with Nicole
     </button>
   `;
 
@@ -159,9 +159,9 @@ const campaignDecks = {
   },
   salomon: {
     title: 'Salomon: Urban Acoustic Trail',
-    tagline: 'Streetwise Gorpcore Meets Underground Acoustic Busking Culture',
+    tagline: 'Streetwise Outdoor Style Meets Underground Acoustic Busking Culture',
     image: 'salomon.png',
-    whyGood: 'Salomon has successfully transitioned from technical mountain hiking footwear into a dominant force in urban streetwear (Gorpcore). The Urban Acoustic Trail campaign bridges Salomon’s rugged durability with urban street culture, capturing emerging acoustic buskers, indie musicians, and street performers navigating concrete cities in Salomon XT-6 sneakers.',
+    whyGood: 'Salomon has successfully transitioned from technical mountain hiking footwear into a dominant force in urban streetwear. The Urban Acoustic Trail campaign bridges Salomon’s rugged durability with urban street culture, capturing emerging acoustic buskers, indie musicians, and street performers navigating concrete cities in Salomon XT-6 sneakers.',
     targetAudience: 'Streetwear Collectors, Urban Creatives, Music Fans (Ages 18–32), Outdoor & City Explorers.',
     strategy: [
       {
@@ -246,7 +246,7 @@ function openCampaignModal(deckId) {
       </div>
     </div>
 
-    <button class="card-btn-full" onclick="openContactModal()">
+    <button class="card-btn-full" onclick="closeModal('campaignModal'); openContactModal();" style="display:inline-flex; align-items:center; justify-content:center; gap:8px;">
       <i data-lucide="mail"></i> Discuss This Spec Campaign with Nicole
     </button>
   `;
@@ -283,7 +283,7 @@ function openContactModal() {
 
 function handleFormSubmit(e) {
   e.preventDefault();
-  alert('Thank you! Your message has been sent to by.nikki01@gmail.com.');
+  window.location.href = 'mailto:by.nikki01@gmail.com';
   closeModal('contactModal');
 }
 

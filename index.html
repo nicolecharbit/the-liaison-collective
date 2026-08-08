@@ -21,14 +21,17 @@
   <!-- Header Navigation Bar -->
   <header class="header">
     <div class="header-container">
-      <a href="#" class="brand-logo" onclick="switchTab('music-mktg')">
+      <a href="#" class="brand-logo" onclick="switchTab('home')">
         <span class="brand-main">THE LIAISON COLLECTIVE</span>
         <span class="brand-sub">BY NIKKI</span>
       </a>
 
-      <!-- 4 TOP NAVIGATION BARS -->
+      <!-- 5 TOP NAVIGATION BARS -->
       <nav class="nav-menu">
-        <button class="nav-btn active" data-tab="music-mktg" onclick="switchTab('music-mktg')">
+        <button class="nav-btn active" data-tab="home" onclick="switchTab('home')">
+          <i data-lucide="home"></i> <span>Home</span>
+        </button>
+        <button class="nav-btn" data-tab="music-mktg" onclick="switchTab('music-mktg')">
           <i data-lucide="disc"></i> <span>Music Marketing Strategies</span>
         </button>
         <button class="nav-btn" data-tab="spec-ads" onclick="switchTab('spec-ads')">
@@ -42,7 +45,7 @@
         </button>
       </nav>
 
-      <button class="cta-btn-sm" onclick="openContactModal()">
+      <button class="cta-btn-sm" onclick="openContactModal()" style="display:inline-flex; align-items:center; gap:6px;">
         <i data-lucide="mail"></i> Get in Touch
       </button>
     </div>
@@ -51,19 +54,70 @@
   <!-- Main View Container -->
   <main class="main-content">
     
-    <!-- Hero Title Header -->
-    <section class="hero-banner">
-      <h1 class="hero-title">The Liaison Collective</h1>
-      <div style="font-size:0.8rem; letter-spacing:3px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase; margin:6px 0 14px;">
-        MARKETING PORTFOLIO BY NICOLE CHARBIT
+    <!-- ==================== TAB 0: HOME LANDING PAGE ==================== -->
+    <section id="tab-home" class="tab-pane active">
+      <section class="hero-banner" style="margin-bottom: 36px;">
+        <h1 class="hero-title">The Liaison Collective</h1>
+        <div style="font-size:0.8rem; letter-spacing:3px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase; margin:6px 0 14px;">
+          MARKETING PORTFOLIO BY NICOLE CHARBIT
+        </div>
+        <p class="hero-subtitle">
+          A boutique digital studio & creative lab connecting music marketing strategies, spec ad campaign pitch decks, visual direction, and editorial design.
+        </p>
+      </section>
+
+      <!-- In-Depth Studio Overview & Manifesto Card -->
+      <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:36px; margin-bottom:36px; box-shadow:var(--shadow-sm);">
+        <div style="max-width:850px; margin:0 auto; text-align:left;">
+          <span style="font-size:0.75rem; letter-spacing:2.5px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase;">STUDIO & PLATFORM OVERVIEW</span>
+          <h2 style="font-family:var(--font-serif); font-size:1.9rem; margin:6px 0 16px; color:var(--text-main);">Behind The Liaison Collective</h2>
+          
+          <p style="color:var(--text-muted); font-size:1.02rem; line-height:1.8; margin-bottom:16px;">
+            The Liaison Collective functions as a boutique digital creative studio and strategy lab founded by Nicole Charbit. Born out of a passion for music culture, editorial media, and high-fashion branding, the platform acts as the original, innovative and professional link between emerging talent, brand identity, and multi-channel campaign execution.
+          </p>
+
+          <p style="color:var(--text-muted); font-size:1.02rem; line-height:1.8;">
+            Grounded across global trends and cultures, the studio approaches marketing not as simple promotion, but as immersive and original storytelling. Across this interactive platform, you will explore artist launch plans, experiential brand spec pitch decks, original editorial graphic designs, and creative vision treatments.
+          </p>
+        </div>
       </div>
-      <p class="hero-subtitle">
-        A digital studio showcasing music marketing strategies, spec ad campaigns, and visual direction.
-      </p>
+
+      <!-- Interactive Editorial Portrait Gallery (Nicole Charbit) -->
+      <div class="margin-bottom-lg">
+        <div style="text-align:center; margin-bottom:20px;">
+          <span style="font-size:0.75rem; letter-spacing:2.5px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase;">FOUNDER & CREATIVE STRATEGIST</span>
+          <h3 style="font-family:var(--font-serif); font-size:1.7rem; margin-top:2px;">Nicole Charbit • Studio Owner</h3>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;">
+          
+          <!-- Photo 1 -->
+          <div class="interactive-card" onclick="openLightbox('nicole_portrait_1.jpg', 'Nicole Charbit - Standing Portrait')">
+            <div style="height:340px; overflow:hidden; position:relative; border-radius:12px;">
+              <img src="nicole_portrait_1.jpg" alt="Nicole Charbit Standing Portrait" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;" />
+            </div>
+          </div>
+
+          <!-- Photo 2 -->
+          <div class="interactive-card" onclick="openLightbox('nicole_portrait_2.jpg', 'Nicole Charbit - Side Profile Portrait')">
+            <div style="height:340px; overflow:hidden; position:relative; border-radius:12px;">
+              <img src="nicole_portrait_2.jpg" alt="Nicole Charbit Profile Portrait" style="width:100%; height:100%; object-fit:cover; object-position:center top; transition:transform 0.5s ease;" />
+            </div>
+          </div>
+
+          <!-- Photo 3 -->
+          <div class="interactive-card" onclick="openLightbox('nicole_portrait_3.jpg', 'Nicole Charbit - Editorial Lounge Portrait')">
+            <div style="height:340px; overflow:hidden; position:relative; border-radius:12px;">
+              <img src="nicole_portrait_3.jpg" alt="Nicole Charbit Editorial Portrait" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;" />
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- ==================== TAB 1: MUSIC MARKETING STRATEGIES ==================== -->
-    <section id="tab-music-mktg" class="tab-pane active">
+    <section id="tab-music-mktg" class="tab-pane">
       <div class="section-header">
         <div class="section-label">01 / MUSIC MARKETING & A&R</div>
         <h2 class="section-title">Music Marketing Strategies</h2>
@@ -141,11 +195,11 @@
 
       <!-- Add Next Artist Expansion Slot -->
       <div class="margin-top-md margin-bottom-lg">
-        <div class="add-artist-box" onclick="openContactModal()">
+        <a href="mailto:by.nikki01@gmail.com?subject=Artist%20Suggestion%20-%20The%20Liaison%20Collective" class="add-artist-box" style="text-decoration:none; display:block;">
           <i data-lucide="plus-circle" style="width: 32px; height: 32px; color: var(--accent-terracotta); margin-bottom: 8px;"></i>
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 4px;">+ Suggest / Add Next Artist Strategy</h4>
           <p style="font-size: 0.9rem; color: var(--text-muted);">Continuously scouting indie musicians across SoundCloud and TikTok. Know an artist I should market next?</p>
-        </div>
+        </a>
       </div>
 
       <!-- Spotify A&R Playlist & Profile Integration -->
@@ -185,9 +239,7 @@
         
         <!-- Glossier -->
         <div class="campaign-card" onclick="openCampaignModal('glossier')">
-          <div class="campaign-img campaign-img-glossier">
-            <span class="campaign-badge-overlay">EXPERIENTIAL BRAND ACTIVATION</span>
-          </div>
+          <div class="campaign-img campaign-img-glossier"></div>
           <div class="campaign-body">
             <h3 class="campaign-title">Glossier x Festival Season</h3>
             <p class="campaign-text"><strong>The Sonic Lounge:</strong> Solving festival skin fatigue with a cooling shade lounge, live DJ listening booths, and exclusive festival-only Glossier merch drops.</p>
@@ -205,12 +257,10 @@
 
         <!-- Salomon -->
         <div class="campaign-card" onclick="openCampaignModal('salomon')">
-          <div class="campaign-img campaign-img-salomon">
-            <span class="campaign-badge-overlay">DOCUMENTARY & CREATIVE DIRECTION</span>
-          </div>
+          <div class="campaign-img campaign-img-salomon"></div>
           <div class="campaign-body">
             <h3 class="campaign-title">Salomon: Urban Acoustic Trail</h3>
-            <p class="campaign-text"><strong>Street Gorpcore Meets Music:</strong> A 35mm documentary film series following street buskers performing across Boston, Miami, NYC, and LA in Salomon XT-6 footwear.</p>
+            <p class="campaign-text"><strong>Streetwise Outdoor Style Meets Music:</strong> A 35mm documentary film series following street buskers performing across Boston, Miami, NYC, and LA in Salomon XT-6 footwear.</p>
             
             <div style="background:var(--bg-sand); padding:10px 12px; border-radius:8px; margin-bottom:14px; font-size:0.82rem; color:var(--text-muted); border-left:3px solid var(--accent-terracotta);">
               <strong>Strategic Impact:</strong> +42% urban footwear sales, 1.2M+ documentary views, 5.1x ad spend ROI.
@@ -326,7 +376,7 @@
             <p style="color:var(--text-muted); font-size:0.95rem; font-style:italic;">Boston College Class of 2028 • Communication Major (Marketing & Journalism Minors)</p>
           </div>
           <p style="color:var(--text-muted); font-size:0.98rem; line-height:1.7;">
-            I am a creative strategist and brand marketer with a deep passion for entertainment, fashion, music, and visual storytelling. Based across <strong>Miami, Dubai, and Boston</strong>, I specialize in crafting 360° campaign strategies, spec advertising blueprints, and high-impact visual direction. My goal is to build genuine cultural moments that connect brands and creative projects to loyal, passionate audiences.
+            I am a creative strategist and brand marketer with a deep passion for entertainment, fashion, music, and visual storytelling. Based across Miami, Dubai, and Boston, I specialize in crafting 360° campaign strategies, spec advertising blueprints, and high-impact visual direction. My goal is to build genuine cultural moments that connect brands and creative projects to loyal and passionate audiences.
           </p>
           <div style="display:flex; gap:16px; flex-wrap:wrap; padding-top:12px; border-top:1px solid var(--border-muted);">
             <div style="display:flex; align-items:center; gap:6px; font-size:0.88rem; color:var(--text-main);">
@@ -422,11 +472,11 @@
   <!-- Footer -->
   <footer class="footer">
     <span style="font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem;">THE LIAISON COLLECTIVE</span>
-    <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 4px;">© 2026 Nicole Charbit. All rights reserved.</p>
+    <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 4px;">© 2026 By Nikki. All rights reserved.</p>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/nicole-charbit-20236621a" target="_blank"><i data-lucide="linkedin"></i> LinkedIn</a>
       <a href="https://www.instagram.com/by.nikkiiiiiii/" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
-      <a href="mailto:by.nikki01@gmail.com"><i data-lucide="mail"></i> Email</a>
+      <a href="javascript:void(0)" onclick="openContactModal()"><i data-lucide="mail"></i> Email</a>
       <a href="https://by-nikki.webflow.io/" target="_blank"><i data-lucide="globe"></i> Portfolio</a>
     </div>
   </footer>
@@ -454,17 +504,15 @@
   </div>
 
   <div id="contactModal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'contactModal')">
-    <div class="modal-box" style="max-width:480px;">
+    <div class="modal-box" style="max-width:440px; text-align:center; padding:36px 28px;">
       <button class="modal-close" onclick="closeModal('contactModal')"><i data-lucide="x"></i></button>
-      <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 6px;">Get in Touch</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Send a message to Nicole Charbit at by.nikki01@gmail.com.</p>
-      
-      <form onsubmit="handleFormSubmit(event)" style="display:flex; flex-direction:column; gap:12px;">
-        <input type="text" placeholder="Your Name" required style="padding:10px; border-radius:8px; border:1px solid var(--border-muted);" />
-        <input type="email" placeholder="Email Address" required style="padding:10px; border-radius:8px; border:1px solid var(--border-muted);" />
-        <textarea rows="4" placeholder="Your Message" required style="padding:10px; border-radius:8px; border:1px solid var(--border-muted);"></textarea>
-        <button type="submit" class="card-btn-full" style="margin-top:4px;">Send Message</button>
-      </form>
+      <div style="width:48px; height:48px; border-radius:50%; background:var(--bg-subtle); border:1px solid var(--border-muted); display:flex; align-items:center; justify-content:center; margin:0 auto 16px;">
+        <i data-lucide="mail" style="color:var(--accent-terracotta); width:24px; height:24px;"></i>
+      </div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 10px;">Get in Touch</h3>
+      <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.6;">
+        If you would like to contact Nicole Charbit or discuss a general inquiry, reach out directly at <a href="mailto:by.nikki01@gmail.com" style="color:var(--accent-terracotta); font-weight:700; text-decoration:underline;">by.nikki01@gmail.com</a>.
+      </p>
     </div>
   </div>
 
