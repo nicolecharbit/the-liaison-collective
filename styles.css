@@ -738,28 +738,177 @@ body {
   flex-direction: column;
 }
 
-.interactive-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--accent-terracotta);
+/* Responsive Grid Classes for Treatment Deck */
+.responsive-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.interactive-card-img-box {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  position: relative;
-  border-bottom: 1px solid var(--border-muted);
+.responsive-inspo-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
 }
 
-.interactive-card-img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+/* Comprehensive Mobile & Touch Device Enhancements */
+@media (max-width: 768px) {
+  /* Header Container */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .brand-logo {
+    text-align: center;
+    align-items: center;
+  }
+
+  .brand-main {
+    font-size: 1.05rem;
+    letter-spacing: 0.8px;
+  }
+
+  .brand-sub {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* Navigation Bar - Horizontal Touch Scrollable Pill List */
+  .nav-menu {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding: 4px 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 0.76rem;
+    flex-shrink: 0;
+  }
+
+  .cta-btn-sm {
+    display: none;
+  }
+
+  /* Main Container Padding */
+  .main-content {
+    padding: 16px 14px 48px;
+  }
+
+  .hero-banner {
+    padding: 16px 0 24px;
+    margin-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  /* Section Headers */
+  .section-title {
+    font-size: 1.55rem;
+  }
+
+  .section-desc {
+    font-size: 0.85rem;
+  }
+
+  /* Subnav Filter Bar */
+  .subnav-filter-bar {
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .subnav-btn {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Grids Layout on Mobile */
+  .grid-2-col, .grid-3-col, .visual-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .home-editorial-hero {
+    padding: 24px 18px;
+  }
+
+  .home-hero-portrait-box {
+    height: 280px;
+  }
+
+  /* Treatment Deck Swatches Grid */
+  .responsive-swatch-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  /* Treatment Deck Inspiration Photos Grid */
+  .responsive-inspo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .responsive-inspo-grid div[style*="height:250px"] {
+    height: 180px !important;
+  }
+
+  /* Treatment Containers */
+  #treatment-cover-card, #treatment-full-deck {
+    padding: 20px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  #treatment-cover-card h2, #treatment-full-deck h2 {
+    font-size: 1.65rem !important;
+  }
+
+  /* Modals on Mobile */
+  .modal-dialog {
+    width: 94% !important;
+    padding: 20px 16px !important;
+    max-height: 92vh !important;
+    overflow-y: auto !important;
+  }
 }
 
-.interactive-card:hover .interactive-card-img-box img {
-  transform: scale(1.06);
+@media (max-width: 480px) {
+  .responsive-swatch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .responsive-inspo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .responsive-inspo-grid div[style*="height:250px"] {
+    height: 160px !important;
+  }
 }
 
