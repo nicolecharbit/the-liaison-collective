@@ -62,7 +62,7 @@
           MARKETING PORTFOLIO BY NICOLE CHARBIT
         </div>
         <p class="hero-subtitle">
-          A boutique digital studio & creative lab connecting music marketing strategies, spec ad campaign pitch decks, visual direction, and editorial design.
+          A digital studio & creative lab connecting music marketing strategies, spec ad campaign pitch decks, visual direction, and editorial design.
         </p>
       </section>
 
@@ -73,7 +73,7 @@
           <h2 style="font-family:var(--font-serif); font-size:1.9rem; margin:6px 0 16px; color:var(--text-main);">Behind The Liaison Collective</h2>
           
           <p style="color:var(--text-muted); font-size:1.02rem; line-height:1.8; margin-bottom:16px;">
-            The Liaison Collective functions as a boutique digital creative studio and strategy lab founded by Nicole Charbit. Born out of a passion for music culture, editorial media, and high-fashion branding, the platform acts as the original, innovative and professional link between emerging talent, brand identity, and multi-channel campaign execution.
+            The Liaison Collective functions as a digital creative studio and strategy lab founded by Nicole Charbit. Born out of a passion for music culture, editorial media, and high-fashion branding, the platform acts as the original, innovative and professional link between emerging talent, brand identity, and multi-channel campaign execution.
           </p>
 
           <p style="color:var(--text-muted); font-size:1.02rem; line-height:1.8;">
@@ -276,87 +276,350 @@
       </div>
     </section>
 
-    <!-- ==================== TAB 3: VISUAL DIRECTION (NICOLE CHARBIT GRAPHIC DESIGNS) ==================== -->
+    <!-- ==================== TAB 3: VISUAL DIRECTION (TREATMENTS & GRAPHIC DESIGNS) ==================== -->
     <section id="tab-visual-dir" class="tab-pane">
       <div class="section-header">
-        <div class="section-label">03 / GRAPHIC DESIGN & VISUAL WORK</div>
-        <h2 class="section-title">Visual Direction & Graphic Design</h2>
-        <p class="section-desc">Original graphic design assets, brand promotion collateral, publication layouts, and visual creative work by Nicole Charbit.</p>
+        <div class="section-label">03 / DIRECTOR'S TREATMENTS, GRAPHIC DESIGN & VISUAL WORK</div>
+        <h2 class="section-title">Visual Direction</h2>
+        <p class="section-desc">Commercial director's treatments, high-fashion style guides, original graphic design collateral, and editorial artwork by Nicole Charbit.</p>
       </div>
 
-      <div class="visual-grid">
+      <!-- Sub-Tab Category Navigation Bar -->
+      <div class="subnav-filter-bar" style="display:flex; justify-content:center; gap:12px; margin-bottom:32px;">
+        <button class="subnav-btn active" onclick="switchVisualSubTab('graphics', this)">
+          <i data-lucide="image"></i> <span>Graphic Design</span>
+        </button>
+        <button class="subnav-btn" onclick="switchVisualSubTab('treatments', this)">
+          <i data-lucide="clapperboard"></i> <span>Commercial Treatments</span>
+        </button>
+      </div>
+
+      <!-- Sub-Tab Pane 1: Graphic Design -->
+      <div id="visual-subtab-graphics" style="display:block;">
+        <div class="visual-grid">
+          
+          <!-- Graphic 1 (LATEST): Supreme Editorial Magazine Spread featuring Frank Ocean -->
+          <div class="visual-card" onclick="openLightbox('supreme_editorial_spread.jpg', 'Supreme Editorial Magazine Spread featuring Frank Ocean')">
+            <div class="visual-card-img-wrapper">
+              <img src="supreme_editorial_spread.jpg" alt="Supreme Editorial Magazine Spread featuring Frank Ocean" />
+            </div>
+          </div>
+
+          <!-- Graphic 2: Dominic Fike - DF3 The Wonders Tour Poster -->
+          <div class="visual-card" onclick="openLightbox('dominic_fike_tour.jpg', 'Dominic Fike: DF3 The Wonders Tour Poster')">
+            <div class="visual-card-img-wrapper">
+              <img src="dominic_fike_tour.jpg" alt="Dominic Fike: DF3 The Wonders Tour Poster" />
+            </div>
+          </div>
+
+          <!-- Graphic 3: Rolling Stone Graphic Design -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e25f2ecc3b980897717a_Rolling%20Stone%20graphic.png', 'Rolling Stone Graphic Design')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e25f2ecc3b980897717a_Rolling%20Stone%20graphic.png" alt="Rolling Stone Graphic Design" />
+            </div>
+          </div>
+
+          <!-- Graphic 4: Boston College TV Graphic Assets -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a72d8026ba32dae83bc484c_Screenshot%202026-08-04%20at%2011.28.15%E2%80%AFPM.png', 'Boston College TV Graphic Assets')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a72d8026ba32dae83bc484c_Screenshot%202026-08-04%20at%2011.28.15%E2%80%AFPM.png" alt="Boston College TV Graphics" />
+            </div>
+          </div>
+
+          <!-- Graphic 5: Promotion BCTV Graphic -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1c29f4fdc4ee52909f6_Promotion%20BCTV.png', 'BCTV Promotional Graphics')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1c29f4fdc4ee52909f6_Promotion%20BCTV.png" alt="BCTV Promotion Graphic" />
+            </div>
+          </div>
+
+          <!-- Graphic 6: BCTV Camera Operating / Broadcast Work -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1acaf39d35e7ec2c61f_BCTV%20camera%20operating.png', 'BCTV Broadcast Direction')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1acaf39d35e7ec2c61f_BCTV%20camera%20operating.png" alt="BCTV Camera Operating" />
+            </div>
+          </div>
+
+          <!-- Graphic 7: Editorial & Journalism Layout I -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df03ef5d7c3f71e846b7fc_Image%2010-2-25%20at%2012.56%E2%80%AFPM.jpeg', 'Journalism & Editorial Layout Design I')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df03ef5d7c3f71e846b7fc_Image%2010-2-25%20at%2012.56%E2%80%AFPM.jpeg" alt="Journalism Layout 1" />
+            </div>
+          </div>
+
+          <!-- Graphic 8: Editorial & Journalism Layout II -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df04d6b7b6fa51f048fb00_Image%2010-2-25%20at%2012.33%E2%80%AFPM.jpeg', 'Journalism & Editorial Layout Design II')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df04d6b7b6fa51f048fb00_Image%2010-2-25%20at%2012.33%E2%80%AFPM.jpeg" alt="Journalism Layout 2" />
+            </div>
+          </div>
+
+          <!-- Graphic 9: Creative Editorial Artwork I -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68e6a9240fdc3c4c58fd3131_Screen%20Shot%202025-10-08%20at%201.26.47%20PM.png', 'Creative Visual Project I')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68e6a9240fdc3c4c58fd3131_Screen%20Shot%202025-10-08%20at%201.26.47%20PM.png" alt="Creative Graphic 1" />
+            </div>
+          </div>
+
+          <!-- Graphic 10: Creative Editorial Artwork II -->
+          <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/696faa4b5ef6d1dab2c76418_Screenshot%202026-01-20%20at%2011.16.04%E2%80%AFAM.png', 'Creative Visual Project II')">
+            <div class="visual-card-img-wrapper">
+              <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/696faa4b5ef6d1dab2c76418_Screenshot%202026-01-20%20at%2011.16.04%E2%80%AFAM.png" alt="Creative Graphic 2" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sub-Tab Pane 2: Commercial Treatments -->
+      <div id="visual-subtab-treatments" style="display:none;">
         
-        <!-- Graphic 1 (LATEST): Supreme Editorial Magazine Spread featuring Frank Ocean -->
-        <div class="visual-card" onclick="openLightbox('supreme_editorial_spread.jpg', 'Supreme Editorial Magazine Spread featuring Frank Ocean')">
-          <div class="visual-card-img-wrapper">
-            <img src="supreme_editorial_spread.jpg" alt="Supreme Editorial Magazine Spread featuring Frank Ocean" />
+        <!-- Initial Cover View: Solo Campaign Poster -->
+        <div id="treatment-cover-card" style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:36px; margin-bottom:36px; box-shadow:var(--shadow-sm); color:var(--text-main); text-align:center;">
+          <div style="font-size:0.75rem; letter-spacing:2px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase; margin-bottom:8px;">COMMERCIAL TREATMENT DECK</div>
+          <h2 style="font-family:var(--font-serif); font-size:2.2rem; margin:0 0 6px; color:var(--text-main);">ARC'TERYX × ARSENAL FC</h2>
+          <p style="font-size:0.88rem; letter-spacing:1px; color:var(--text-muted); font-weight:600; text-transform:uppercase; margin-bottom:24px;">"PROOF AGAINST THE ELEMENTS"</p>
+          
+          <div style="max-width:580px; margin:0 auto; cursor:pointer;" onclick="toggleTreatmentDeck(true)">
+            <div style="width:100%; border-radius:16px; overflow:hidden; border:1px solid var(--border-muted); box-shadow:var(--shadow-md); transition:transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+              <img src="arcteryx_arsenal_poster.jpg" alt="Arc'teryx x Arsenal Campaign Poster Cover" style="width:100%; height:auto; display:block;" />
+            </div>
+            <div style="margin-top:18px;">
+              <button style="background:var(--accent-terracotta); color:#FFF; border:none; padding:12px 28px; border-radius:24px; font-size:0.88rem; font-weight:700; cursor:pointer; letter-spacing:0.5px; display:inline-flex; align-items:center; gap:8px; box-shadow:var(--shadow-sm);">
+                <i data-lucide="sparkles" style="width:16px; height:16px;"></i> Click Poster to View Full Pitch Deck & Mood Board
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- Graphic 2: Dominic Fike - DF3 The Wonders Tour Poster -->
-        <div class="visual-card" onclick="openLightbox('dominic_fike_tour.jpg', 'Dominic Fike: DF3 The Wonders Tour Poster')">
-          <div class="visual-card-img-wrapper">
-            <img src="dominic_fike_tour.jpg" alt="Dominic Fike: DF3 The Wonders Tour Poster" />
-          </div>
-        </div>
+        <!-- Full Treatment Pitch Deck (Expanded on Click) -->
+        <div id="treatment-full-deck" style="display:none; background:var(--bg-card); border:1px solid var(--border-muted); border-radius:var(--radius-card); padding:36px; margin-bottom:36px; box-shadow:var(--shadow-sm); color:var(--text-main);">
+          
+          <button style="background:transparent; border:1px solid var(--border-muted); color:var(--accent-terracotta); padding:6px 14px; border-radius:20px; font-size:0.78rem; font-weight:600; cursor:pointer; margin-bottom:20px; display:inline-flex; align-items:center; gap:6px;" onclick="toggleTreatmentDeck(false)">
+            <i data-lucide="arrow-left" style="width:14px; height:14px;"></i> Back to Campaign Cover
+          </button>
+          
+          <!-- Header Banner -->
+          <div style="text-align:center; max-width:800px; margin:0 auto 32px; border-bottom:1px solid var(--border-muted); padding-bottom:24px;">
+            <h2 style="font-family:var(--font-serif); font-size:2.5rem; margin:0 0 6px; color:var(--text-main);">ARC'TERYX × ARSENAL FC</h2>
+            <p style="font-size:0.95rem; letter-spacing:1px; color:var(--text-muted); font-weight:600; text-transform:uppercase;">CAMPAIGN TITLE: "PROOF AGAINST THE ELEMENTS"</p>
+            <p style="font-size:0.95rem; color:var(--text-muted); font-style:italic; margin-top:8px;">
+              "A high-octane synthesis of alpine performance engineering and relentless North London grit."
+            </p>
 
-        <!-- Graphic 2: Rolling Stone Graphic Design -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e25f2ecc3b980897717a_Rolling%20Stone%20graphic.png', 'Rolling Stone Graphic Design')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e25f2ecc3b980897717a_Rolling%20Stone%20graphic.png" alt="Rolling Stone Graphic Design" />
+            <!-- Director's Personal Note & Rationale -->
+            <div style="background:var(--bg-subtle); border:1px solid var(--border-muted); border-radius:14px; padding:18px 24px; margin-top:20px; text-align:left;">
+              <span style="font-size:0.72rem; letter-spacing:2px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase;">DIRECTOR'S NOTE & CREATIVE RATIONALE</span>
+              <p style="font-size:0.92rem; color:var(--text-main); line-height:1.7; margin-top:6px;">
+                As a lifelong Arsenal supporter, I’ve always been inspired by the club’s effortless style and the sleek apparel lines they release. Arc’teryx is another brand I’m genuinely fond of for its pinnacle technical design. Fusing these two leading brands felt like an intuitive synthesis, bringing North London football culture together with alpine technical engineering into one cohesive campaign.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- Graphic 3: Boston College TV Graphic Assets -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a72d8026ba32dae83bc484c_Screenshot%202026-08-04%20at%2011.28.15%E2%80%AFPM.png', 'Boston College TV Graphic Assets')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a72d8026ba32dae83bc484c_Screenshot%202026-08-04%20at%2011.28.15%E2%80%AFPM.png" alt="Boston College TV Graphics" />
+          <!-- Main Campaign Poster -->
+          <div style="max-width:640px; margin:0 auto 36px; text-align:center;">
+            <div style="font-size:0.75rem; letter-spacing:2px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase; margin-bottom:12px;">CAMPAIGN POSTER</div>
+            <div style="width:100%; border-radius:16px; overflow:hidden; border:1px solid var(--border-muted); box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('arcteryx_arsenal_poster.jpg', 'Arc\'teryx × Arsenal FC Campaign Poster')">
+              <img src="arcteryx_arsenal_poster.jpg" alt="Arc'teryx x Arsenal Campaign Poster" style="width:100%; height:auto; display:block;" />
+            </div>
           </div>
-        </div>
 
-        <!-- Graphic 4: Promotion BCTV Graphic -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1c29f4fdc4ee52909f6_Promotion%20BCTV.png', 'BCTV Promotional Graphics')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1c29f4fdc4ee52909f6_Promotion%20BCTV.png" alt="BCTV Promotion Graphic" />
+          <!-- Commercial Soundtrack Callout Card (Moved Below Poster) -->
+          <div style="background:var(--bg-subtle); border:1px solid var(--border-muted); border-radius:14px; padding:16px 20px; margin-bottom:32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; max-width:800px; margin:0 auto 36px;">
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div style="width:42px; height:42px; border-radius:10px; background:var(--accent-terracotta); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <i data-lucide="music" style="width:22px; height:22px; color:#FFF;"></i>
+              </div>
+              <div style="text-align:left;">
+                <span style="font-size:0.7rem; letter-spacing:1.5px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase;">COMMERCIAL SOUNDTRACK</span>
+                <div style="font-size:0.95rem; font-weight:700; color:var(--text-main); margin-top:2px;">"SpottieOttieDopaliscious" by OutKast</div>
+              </div>
+            </div>
+            <a href="https://open.spotify.com/search/SpottieOttieDopaliscious" target="_blank" style="font-size:0.8rem; font-weight:600; color:var(--accent-terracotta); border:1px solid var(--border-muted); padding:6px 14px; border-radius:14px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; background:var(--bg-card);">
+              <i data-lucide="play-circle" style="width:14px; height:14px;"></i> Listen to Track
+            </a>
           </div>
-        </div>
 
-        <!-- Graphic 5: BCTV Camera Operating / Broadcast Work -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1acaf39d35e7ec2c61f_BCTV%20camera%20operating.png', 'BCTV Broadcast Direction')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/6a73e1acaf39d35e7ec2c61f_BCTV%20camera%20operating.png" alt="BCTV Camera Operating" />
+          <!-- Official Arsenal Club & Capsule Color Palette Swatches (Moved Lower Down) -->
+          <div style="margin-bottom:40px;">
+            <div style="font-size:0.75rem; letter-spacing:2px; color:var(--accent-terracotta); font-weight:700; text-transform:uppercase; margin-bottom:12px; text-align:center;">OFFICIAL ARSENAL FC CLUB & CAPSULE PALETTE</div>
+            <div style="display:grid; grid-template-columns:repeat(6, 1fr); gap:10px; max-width:960px; margin:0 auto;">
+              
+              <!-- Highbury Red -->
+              <div style="background:#DB0007; color:#FFF; padding:12px 8px; border-radius:10px; text-align:center; box-shadow:var(--shadow-sm);">
+                <div style="font-size:0.8rem; font-weight:700;">Highbury Red</div>
+                <div style="font-size:0.7rem; opacity:0.9; font-family:monospace; margin-top:2px;">#DB0007</div>
+              </div>
+
+              <!-- Pure White -->
+              <div style="background:#FFFFFF; color:var(--text-main); padding:12px 8px; border-radius:10px; border:1px solid var(--border-muted); text-align:center;">
+                <div style="font-size:0.8rem; font-weight:700;">Pure White</div>
+                <div style="font-size:0.7rem; opacity:0.7; font-family:monospace; margin-top:2px;">#FFFFFF</div>
+              </div>
+
+              <!-- Heritage Dark Burgundy -->
+              <div style="background:#7F0000; color:#FFF; padding:12px 8px; border-radius:10px; text-align:center;">
+                <div style="font-size:0.8rem; font-weight:700;">Heritage Dark Red</div>
+                <div style="font-size:0.7rem; opacity:0.9; font-family:monospace; margin-top:2px;">#7F0000</div>
+              </div>
+
+              <!-- North London Navy -->
+              <div style="background:#0B1E3D; color:#FFF; padding:12px 8px; border-radius:10px; text-align:center;">
+                <div style="font-size:0.8rem; font-weight:700;">North London Navy</div>
+                <div style="font-size:0.7rem; opacity:0.9; font-family:monospace; margin-top:2px;">#0B1E3D</div>
+              </div>
+
+              <!-- Victory Gold -->
+              <div style="background:#D4AF37; color:#0F172A; padding:12px 8px; border-radius:10px; text-align:center;">
+                <div style="font-size:0.8rem; font-weight:700;">Victory Gold</div>
+                <div style="font-size:0.7rem; font-family:monospace; margin-top:2px; font-weight:600;">#D4AF37</div>
+              </div>
+
+              <!-- Bruised Banana Yellow -->
+              <div style="background:#FFD100; color:#0F172A; padding:12px 8px; border-radius:10px; text-align:center;">
+                <div style="font-size:0.8rem; font-weight:700;">Bruised Banana</div>
+                <div style="font-size:0.7rem; font-family:monospace; margin-top:2px; font-weight:600;">#FFD100</div>
+              </div>
+
+            </div>
           </div>
-        </div>
 
-        <!-- Graphic 6: Editorial & Journalism Layout I -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df03ef5d7c3f71e846b7fc_Image%2010-2-25%20at%2012.56%E2%80%AFPM.jpeg', 'Journalism & Editorial Layout Design I')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df03ef5d7c3f71e846b7fc_Image%2010-2-25%20at%2012.56%E2%80%AFPM.jpeg" alt="Journalism Layout 1" />
+          <!-- Section 1: Commercial Video Inspo & Storyboard Shots (6 Inspiration Photos) -->
+          <div style="margin-bottom:48px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; border-bottom:1px solid var(--border-muted); padding-bottom:10px;">
+              <div>
+                <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--text-main); margin:0; display:flex; align-items:center; gap:8px;">
+                  <i data-lucide="clapperboard" style="color:var(--accent-terracotta); width:20px; height:20px;"></i> Commercial Video Inspo & Storyboard Shots
+                </h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); margin:4px 0 0; font-style:italic;">When scrolling on the internet for inspiration, these are pictures I found that create the vibe I am looking for.</p>
+              </div>
+              <span style="font-size:0.75rem; background:var(--bg-subtle); color:var(--accent-terracotta); padding:4px 12px; border-radius:12px; font-weight:600; border:1px solid var(--border-muted);">6 INSPIRATION PHOTOS</span>
+            </div>
+
+            <!-- Inspiration Photo Gallery Grid -->
+            <div style="display:grid; grid-template-columns:repeat(6, 1fr); gap:14px;">
+              
+              <!-- Inspo Photo 1 -->
+              <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('inspo_1.jpg', 'Visual Inspiration 1: Squad Training Mood')">
+                <div style="height:250px; overflow:hidden;">
+                  <img src="inspo_1.jpg" alt="Visual Inspiration 1" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+                </div>
+              </div>
+
+              <!-- Inspo Photo 2 (Adjusted Object Position to show person and ball) -->
+              <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('inspo_2.jpg', 'Visual Inspiration 2: Night Pitch Solo Drill')">
+                <div style="height:250px; overflow:hidden;">
+                  <img src="inspo_2.jpg" alt="Visual Inspiration 2" style="width:100%; height:100%; object-fit:cover; object-position:center bottom; display:block; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+                </div>
+              </div>
+
+              <!-- Inspo Photo 3 -->
+              <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('inspo_3.jpg', 'Visual Inspiration 3: Stadium Floodlight Atmosphere')">
+                <div style="height:250px; overflow:hidden;">
+                  <img src="inspo_3.jpg" alt="Visual Inspiration 3" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+                </div>
+              </div>
+
+              <!-- Inspo Photo 4 -->
+              <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('inspo_4.jpg', 'Visual Inspiration 4: Rain & StormHood Close-up')">
+                <div style="height:250px; overflow:hidden;">
+                  <img src="inspo_4.jpg" alt="Visual Inspiration 4" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+                </div>
+              </div>
+
+              <!-- Inspo Photo 5 -->
+              <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('inspo_5.jpg', 'Visual Inspiration 5: Seek No Shelter Techwear Editorial')">
+                <div style="height:250px; overflow:hidden;">
+                  <img src="inspo_5.jpg" alt="Visual Inspiration 5" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+                </div>
+              </div>
+
+              <!-- Inspo Photo 6 -->
+              <div style="background:var(--bg-card); border:1px solid var(--border-muted); border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm); cursor:pointer;" onclick="openLightbox('inspo_6.jpg', 'Visual Inspiration 6: Night Pitch Solo Session')">
+                <div style="height:250px; overflow:hidden;">
+                  <img src="inspo_6.jpg" alt="Visual Inspiration 6" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div>
 
-        <!-- Graphic 7: Editorial & Journalism Layout II -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df04d6b7b6fa51f048fb00_Image%2010-2-25%20at%2012.33%E2%80%AFPM.jpeg', 'Journalism & Editorial Layout Design II')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68df04d6b7b6fa51f048fb00_Image%2010-2-25%20at%2012.33%E2%80%AFPM.jpeg" alt="Journalism Layout 2" />
+          <!-- Director's Treatment Specs: Wardrobe & Product Focus -->
+          <div style="background:var(--bg-subtle); padding:24px; border-radius:14px; border:1px solid var(--border-muted); margin-bottom:36px;">
+            <h3 style="font-family:var(--font-serif); font-size:1.25rem; margin-bottom:12px; color:var(--text-main); display:flex; align-items:center; gap:8px;">
+              <i data-lucide="shirt" style="color:var(--accent-terracotta); width:18px; height:18px;"></i> Wardrobe & Product Focus
+            </h3>
+            <p style="font-size:0.92rem; font-weight:700; color:var(--accent-terracotta); margin-bottom:10px;">Apparel Focus: Arc'teryx × Arsenal Alpha SV Special Edition</p>
+            <ul style="padding-left:18px; font-size:0.88rem; color:var(--text-muted); line-height:1.7;">
+              <li style="margin-bottom:6px;"><strong>Shell:</strong> N100d Most Rugged 3L GORE-TEX Pro in Matte Black with reflective tonal Arsenal Cannon crest on left sleeve.</li>
+              <li style="margin-bottom:6px;"><strong>Chest Emblem:</strong> Deadbird logo embroidered in Highbury Crimson metallic thread.</li>
+              <li style="margin-bottom:6px;"><strong>Details:</strong> WaterTight™ micro-sealed zipper pulls, StormHood™ engineered over stadium cap, taped inner seams featuring Bruised Banana Yellow detailing.</li>
+              <li><strong>Styling Pairing:</strong> Tactical cargo trousers, Gore-Tex trail sneakers, wet weather pitch training gear.</li>
+            </ul>
           </div>
-        </div>
 
-        <!-- Graphic 8: Creative Editorial Artwork I -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68e6a9240fdc3c4c58fd3131_Screen%20Shot%202025-10-08%20at%201.26.47%20PM.png', 'Creative Visual Project I')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/68e6a9240fdc3c4c58fd3131_Screen%20Shot%202025-10-08%20at%201.26.47%20PM.png" alt="Creative Graphic 1" />
+          <!-- Shot-by-Shot Script & Storyboard Breakdown Table -->
+          <div style="margin-bottom:36px;">
+            <h3 style="font-family:var(--font-serif); font-size:1.35rem; margin-bottom:14px; color:var(--text-main); display:flex; align-items:center; gap:8px;">
+              <i data-lucide="film" style="color:var(--accent-terracotta); width:20px; height:20px;"></i> Shot-by-Shot Script & Storyboard Breakdown (60s Commercial Spot)
+            </h3>
+            
+            <div style="overflow-x:auto;">
+              <table style="width:100%; border-collapse:collapse; background:var(--bg-card); border:1px solid var(--border-muted); border-radius:12px; font-size:0.88rem;">
+                <thead>
+                  <tr style="background:var(--bg-subtle); border-bottom:1px solid var(--border-muted); text-align:left;">
+                    <th style="padding:12px 14px; width:110px; font-family:var(--font-sans); color:var(--accent-terracotta);">TIMECODE</th>
+                    <th style="padding:12px 14px; font-family:var(--font-sans);">VISUAL DESCRIPTION</th>
+                    <th style="padding:12px 14px; font-family:var(--font-sans);">AUDIO & SOUND EFFECTS (SFX)</th>
+                    <th style="padding:12px 14px; font-family:var(--font-sans);">VOICEOVER (VO) & KINETIC TEXT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid var(--border-muted);">
+                    <td style="padding:14px; font-weight:700; font-family:monospace;">00:00 - 00:10</td>
+                    <td style="padding:14px; color:var(--text-muted);">Extreme Macro Shot: Water droplets sitting on dark membrane fabric. A hand pulls a heavy-duty waterproof zip upward. Frame shifts to cold rain pouring under North London street lamps.</td>
+                    <td style="padding:14px; color:var(--text-muted);">[SFX] Intimate zipper closure click. Heavy rain soundscape in stereo. Deep ambient sub-bass pulse begins.</td>
+                    <td style="padding:14px; color:var(--text-main);"><strong>VO (Calm, deep London accent):</strong><br/>"They call it weather..."</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid var(--border-muted);">
+                    <td style="padding:14px; font-weight:700; font-family:monospace;">00:10 - 00:22</td>
+                    <td style="padding:14px; color:var(--text-muted);">Medium Dynamic Shot: Player walking through flooded concrete tunnels beneath Emirates Stadium. Hood pulled tight. Water runs off the Arc'teryx StormHood™ seamlessly.</td>
+                    <td style="padding:14px; color:var(--text-muted);">[SFX] Heavy boots hitting wet concrete. Rhythmic breathing. Synthesizer arp swells up.</td>
+                    <td style="padding:14px; color:var(--text-main);"><strong>VO:</strong><br/>"...we call it conditions. And conditions are created to be mastered."</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid var(--border-muted);">
+                    <td style="padding:14px; font-weight:700; font-family:monospace;">00:22 - 00:38</td>
+                    <td style="padding:14px; color:var(--text-muted);">Rapid Montage (High-Speed 120fps):<br/>• Ball struck violently on pitch, sending a cascade of water flying.<br/>• Close-up: Matte Deadbird logo on chest catching rim lighting.<br/>• Fan jumping in downpour under Alpha SV shell jacket.</td>
+                    <td style="padding:14px; color:var(--text-muted);">[MUSIC] Beat drops hard—heavy industrial UK bassline. Sound of kick-ball impact echoing like thunder.</td>
+                    <td style="padding:14px; color:var(--text-main);"><strong>On-Screen Kinetic Text:</strong><br/>GORE-TEX PRO × ARSENAL FC</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid var(--border-muted);">
+                    <td style="padding:14px; font-weight:700; font-family:monospace;">00:38 - 00:50</td>
+                    <td style="padding:14px; color:var(--text-muted);">Wide Cinematic Shot: Pitch level looking up at floodlights through heavy fog and rain. Player stands at center circle, looking into the storm. Reflective Arsenal Cannon shines on sleeve.</td>
+                    <td style="padding:14px; color:var(--text-muted);">[SFX] Stadium crowd noise roaring from muffled distance to roaring high-fidelity swell.</td>
+                    <td style="padding:14px; color:var(--text-main);"><strong>VO:</strong><br/>"Born in the mountains. Built for North London."</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:14px; font-weight:700; font-family:monospace;">00:50 - 01:00</td>
+                    <td style="padding:14px; color:var(--text-muted);">Lockup & Endframe: Dark metallic surface with water running down. Dual branding illuminates in clean vector glow: Arc'teryx Deadbird + Arsenal Cannon.</td>
+                    <td style="padding:14px; color:var(--text-muted);">[MUSIC] Crisp final electronic bass snap fading into gentle rain sound.</td>
+                    <td style="padding:14px; color:var(--text-main);"><strong>On-Screen Text & Tagline:</strong><br/>ARC'TERYX × ARSENAL<br/>PROOF AGAINST THE ELEMENTS.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
 
-        <!-- Graphic 9: Creative Editorial Artwork II -->
-        <div class="visual-card" onclick="openLightbox('https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/696faa4b5ef6d1dab2c76418_Screenshot%202026-01-20%20at%2011.16.04%E2%80%AFAM.png', 'Creative Visual Project II')">
-          <div class="visual-card-img-wrapper">
-            <img src="https://cdn.prod.website-files.com/68749f4294ee9c70a008f0b5/696faa4b5ef6d1dab2c76418_Screenshot%202026-01-20%20at%2011.16.04%E2%80%AFAM.png" alt="Creative Graphic 2" />
+          <!-- Direct Email Call to Action -->
+          <div style="text-align:center;">
+            <button class="card-btn-full" onclick="openContactModal()" style="display:inline-flex; width:auto; padding:12px 28px; background:var(--text-main); color:#FFF; border:none;">
+              <i data-lucide="mail"></i> Discuss Commercial Treatment with Nicole
+            </button>
           </div>
-        </div>
 
+        </div>
       </div>
+
     </section>
 
     <!-- ==================== TAB 4: ABOUT & SKILLS ==================== -->

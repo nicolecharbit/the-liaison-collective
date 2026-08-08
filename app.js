@@ -291,3 +291,41 @@ function openLightbox(imgSrc, caption) {
   document.getElementById('lightboxImg').src = imgSrc;
   openModal('lightboxModal');
 }
+
+function switchVisualSubTab(subTabId, btnEl) {
+  const allBtns = document.querySelectorAll('.subnav-btn');
+  allBtns.forEach(b => b.classList.remove('active'));
+  if (btnEl) btnEl.classList.add('active');
+
+  const treatmentsPane = document.getElementById('visual-subtab-treatments');
+  const graphicsPane = document.getElementById('visual-subtab-graphics');
+  const coverCard = document.getElementById('treatment-cover-card');
+  const fullDeck = document.getElementById('treatment-full-deck');
+
+  if (subTabId === 'treatments') {
+    if (treatmentsPane) treatmentsPane.style.display = 'block';
+    if (graphicsPane) graphicsPane.style.display = 'none';
+    if (coverCard) coverCard.style.display = 'block';
+    if (fullDeck) fullDeck.style.display = 'none';
+  } else {
+    if (treatmentsPane) treatmentsPane.style.display = 'none';
+    if (graphicsPane) graphicsPane.style.display = 'block';
+  }
+}
+
+function toggleTreatmentDeck(show) {
+  const coverCard = document.getElementById('treatment-cover-card');
+  const fullDeck = document.getElementById('treatment-full-deck');
+  if (!coverCard || !fullDeck) return;
+  
+  if (show === true) {
+    coverCard.style.display = 'none';
+    fullDeck.style.display = 'block';
+    if (window.lucide) lucide.createIcons();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    fullDeck.style.display = 'none';
+    coverCard.style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
