@@ -60,7 +60,8 @@
    * Features Nicole's editorial portrait (`nicole_portrait_editorial.jpg`) and studio introduction.
    * Interactive showcase cards linking to Music Marketing, Graphic Design, Arc'teryx × Arsenal FC treatment, and About Nicole.
 2. **Music Marketing Strategies (`#tab-music-mktg`)**:
-   * Strategic pitch decks for **Nate Sib** (Hyperpop / Alternative Electropop) and **dexter in the newsagent** (South London Alt-R&B).
+   * **Nate Sib — August 21st Album Rollout Proposal**: Target Release August 21st, 2026 (Republic Records, NYFW Praying runway takeover, FADER feature, TikTok @nate_s1b & IG @nate_sib 3-week studio snippet series + "Notion" trend, X lyric voice notes, 2-part Substack newsletter, YouTube live listening party + Webster Hall NYC & TLA Philly tour pre-save ticket codes, guerilla scannable QR wheatpaste posters at ESSX NYC, SoHo, Fairfax LA, BC, NYU, USC).
+   * **dexter in the newsagent**: South London Alt-R&B / Soft-Lit Pop campaign.
    * Interactive modal (`#campaignModal`) with strategy breakdown and direct email contact trigger (`mailto:by.nikki01@gmail.com`).
 3. **Spec Ads (`#tab-spec-ads`)**:
    * Interactive filter bar (`ALL`, `SPOTIFY`, `ROLLING STONE`).

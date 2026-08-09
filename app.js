@@ -31,29 +31,30 @@ function switchTab(tabId) {
 // Artist Campaign Decks Data (Tab 1: Music Marketing Strategies)
 const artistCampaigns = {
   natesib: {
-    name: 'Nate Sib',
-    genre: 'Hyperpop / Alternative Electropop / Electroclash',
-    why: 'Nate Sib makes groundbreaking alternative electropop and hyperpop, blending synth-driven melodies, glitchy electronic dance beats, trap grit, and heavy bass with emotive vocal delivery. He has raw star power and compelling artistry that deserves a massive, dedicated global audience.',
+    name: 'Nate Sib — August 21st Album Rollout Proposal',
+    genre: 'Hyperpop / Alternative Electropop / Republic Records',
+    targetRelease: 'Target Release Date: August 21st, 2026 • Prepared by Nicole Charbit',
+    why: 'Nate Sib sits at a really unique spot right now. Signed to Republic Records, the 22-year-old LA artist lives right where hyperpop and alt-rock meet downtown fashion culture (such as his NYFW takeover with Praying and feature in The FADER). Coming off breakout singles like "Why can\'t you see" and "Let You Go," the primary objective for his August 21st album rollout is to establish him as the define-the-era voice for Gen Z indie music fans.',
     differently: [
       {
-        title: '1. Humanize & Make His Social Media Accessible',
-        desc: 'Shift Nate’s social presence away from distant or cryptic posts toward genuine fan intimacy. Share raw 15-30 second studio production vlogs showing how he layers synths and vocals, host live Instagram Q&As, and reply to fan comments in video format to build an authentic, loyal community.'
+        title: '1. Internet & Brand Positioning (Gen Z Cultural Catalyst)',
+        desc: 'Position Nate at the intersection of major-label pop scale and underground digital subculture. Harness his NYFW Praying runway presence and FADER editorial coverage to position him as a high-fashion indie rockstar, decoupling his press narrative from 2hollis and cementing his standalone identity.'
       },
       {
-        title: '2. Establish Standalone Pop Star Identity (Unlinking 2hollis)',
-        desc: 'Actively decouple Nate’s press narrative from 2hollis so he is recognized as an independent pop star in his own right. Pitch exclusive solo profile interviews to Complex, Office Magazine, Paper, and Substack newsletters focusing strictly on Nate’s personal backstory, songwriting, and distinct L.A. sound.'
+        title: '2. Multi-Channel Social Strategy (TikTok, IG, X & Substack)',
+        desc: '• TikTok (@nate_s1b) & Instagram (@nate_sib): Run a 3-week studio snippet series featuring raw vocal takes and 35mm behind-the-scenes clips. Seed an unreleased audio trend using "Notion," pairing his signature streetwear style with heavy alt-pop sound.<br/>• X & Substack: Drop cryptic voice notes of unreleased lyrics on X, and publish a 2-part Substack newsletter telling the story of his evolution from SoundCloud hyperpop to major-label album production, cultivating intimate fan loyalty.'
       },
       {
-        title: '3. Elevate High-Fashion Underground Rockstar Visuals',
-        desc: 'Capitalize on Nate’s striking personal aesthetic (fur-trimmed suede jackets, distressed denim, layered silver jewelry) by partnering with independent luxury streetwear brands (e.g. Acne Studios, vintage workwear archivists). Produce high-contrast 35mm flash photography artwork and lookbooks.'
+        title: '3. YouTube & Live Tour Crossover (Webster Hall & TLA Philly)',
+        desc: 'Host an exclusive live YouTube listening party 24 hours before midnight on August 21st. Fans who pre-save the album unlock first-dibs early ticket access codes for his North American tour dates at Webster Hall in NYC and TLA in Philly.'
       },
       {
-        title: '4. Targeted Alt-Pop & Electropop Playlist Seeding',
-        desc: 'Execute a precision editorial pitch campaign targeting key Spotify playlists (Anti Pop, Pollinate, hyperpop, Alt Pop, Lorem) and send advance listens to influential TikTok music tastemakers and Substack curators.'
+        title: '4. Pre-Release Guerilla Hype Activation (NYC, SoHo, Fairfax & Campus Hubs)',
+        desc: 'Wheatpaste scannable QR posters around high-traffic culture hubs—ESSX NYC, SoHo, Fairfax in LA, and top college campuses (Boston College, NYU, USC). Scanning takes fans to an interactive microsite featuring 10-second secret audio leaks, a numbered tracklist where tapping each track unlocks an unreleased demo snippet, and a live pre-save countdown.'
       },
       {
-        title: '5. Experiential Secret Warehouse Pop-Up Series',
-        desc: 'Organize unannounced "Distorted Pop" pop-up warehouse live sessions in major cultural hubs (Los Angeles, Boston, Miami, NYC). Distribute location RSVPs exclusively via an opt-in text line to build high-demand exclusivity and organic word-of-mouth virality.'
+        title: '5. Targeted Alt-Pop Playlist & Tastemaker Seeding',
+        desc: 'Execute a precision editorial pitch campaign targeting key Spotify & Apple Music playlists (Anti Pop, Pollinate, hyperpop, Alt Pop, Lorem) alongside advance listens to influential Substack curators and indie tastemakers.'
       }
     ]
   },
@@ -93,7 +94,8 @@ function openArtistModal(artistId) {
   const content = `
     <span style="font-size:0.75rem; letter-spacing:1.5px; color:var(--accent-terracotta); text-transform:uppercase; font-weight:600;">Detailed Music Marketing Strategy</span>
     <h3 style="font-family:var(--font-serif); font-size:1.9rem; margin:6px 0;">${artist.name}</h3>
-    <p style="color:var(--text-muted); font-size:0.95rem; font-style:italic; margin-bottom:20px;">${artist.genre}</p>
+    <p style="color:var(--text-muted); font-size:0.95rem; font-style:italic; margin-bottom:12px;">${artist.genre}</p>
+    ${artist.targetRelease ? `<div style="background:var(--bg-sand); border:1px solid var(--border-muted); border-radius:8px; padding:6px 12px; font-size:0.8rem; font-weight:700; color:var(--accent-terracotta); margin-bottom:20px; display:inline-block;">${artist.targetRelease}</div>` : ''}
 
     <div style="margin-bottom:20px; background:var(--bg-subtle); padding:16px; border-radius:12px; border:1px solid var(--border-muted);">
       <h4 style="font-family:var(--font-serif); font-size:1.15rem; color:var(--text-main); margin-bottom:4px;">Why I Chose This Artist</h4>
@@ -329,3 +331,21 @@ function toggleTreatmentDeck(show) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
+
+// Spec Ads Category Filter (Tab 2)
+function filterSpecAds(category, btnEl) {
+  const allBtns = document.querySelectorAll('.spec-filter-btn');
+  allBtns.forEach(b => b.classList.remove('active'));
+  if (btnEl) btnEl.classList.add('active');
+
+  const cards = document.querySelectorAll('.spec-ad-item');
+  cards.forEach(card => {
+    const cardCat = card.dataset.category;
+    if (category === 'all' || cardCat === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
