@@ -150,3 +150,12 @@ When starting a new conversation session:
 1. Read this `tracking_notes.md` file first to reload full project context.
 2. Confirm the 5 main tabs, design palette, and Arc'teryx × Arsenal FC campaign deck structure remain intact.
 3. Apply any new user directives directly while preserving the rules outlined above.
+
+---
+
+## 8. Change Log & Recent Updates
+
+* **September 21, 2026**: Added two Boston College athletics graphic design posters to the Graphic Design sub-tab (`#visual-subtab-graphics`):
+  * `bc_red_bandanna.jpg`: Boston College Football Red Bandanna Game Poster (BC vs. Rutgers 1-Day Countdown featuring Welles Crowther).
+  * `bc_gameday_prediction.jpg`: Boston College Football Game Day Prediction Graphic (BC vs. UMaine 96.9% ESPN Analytics).
+
