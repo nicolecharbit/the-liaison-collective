@@ -46,11 +46,11 @@
 ```
 [The Liaison Collective Header]
  ├── Tab 1: Home (#tab-home)
- ├── Tab 2: Music Marketing Strategies (#tab-music-mktg)
- ├── Tab 3: Spec Ads (#tab-spec-ads)
- ├── Tab 4: Visual Direction (#tab-visual-dir)
+ ├── Tab 2: Visual Direction (#tab-visual-dir)  [moved to first content tab - Nov 25, 2026]
  │     ├── Sub-Tab 1: Graphic Design (#visual-subtab-graphics) -> Active First by Default
  │     └── Sub-Tab 2: Commercial Treatments (#visual-subtab-treatments) -> Arc'teryx x Arsenal
+ ├── Tab 3: Music Marketing Strategies (#tab-music-mktg)
+ ├── Tab 4: Spec Ads (#tab-spec-ads)
  └── Tab 5: About & Skills (#tab-about-skills)
 ```
 
@@ -158,4 +158,9 @@ When starting a new conversation session:
 * **September 21, 2026**: Added two Boston College athletics graphic design posters to the Graphic Design sub-tab (`#visual-subtab-graphics`):
   * `bc_red_bandanna.jpg`: Boston College Football Red Bandanna Game Poster (BC vs. Rutgers 1-Day Countdown featuring Welles Crowther).
   * `bc_gameday_prediction.jpg`: Boston College Football Game Day Prediction Graphic (BC vs. UMaine 96.9% ESPN Analytics).
+* **November 25, 2026**: Reordered nav + made Visual Direction sub-tabs more prominent:
+  * Nav order is now Home -> Visual Direction -> Music Marketing Strategies -> Spec Ads -> About & Skills.
+  * Section labels renumbered: Visual Direction `01`, Music Marketing `02`, Spec Ads `03`, About `04`.
+  * `.subnav-btn` (styles.css): uppercase, `font-weight: 700` (active `800`), `1rem`, `14px 32px` padding, white bg + 1.5px charcoal border when inactive, hover lift. Mobile: `0.8rem`, `12px 14px` padding.
+  * Removed inline style from `.subnav-filter-bar` in index.html (CSS file now controls spacing). Added Jost weight `800` to Google Fonts link.
 

@@ -9,7 +9,7 @@
   <!-- Fonts: Vollkorn, Playfair Display, Jost -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -31,14 +31,14 @@
         <button class="nav-btn active" data-tab="home" onclick="switchTab('home')">
           <i data-lucide="home"></i> <span>Home</span>
         </button>
+        <button class="nav-btn" data-tab="visual-dir" onclick="switchTab('visual-dir')">
+          <i data-lucide="camera"></i> <span>Visual Direction</span>
+        </button>
         <button class="nav-btn" data-tab="music-mktg" onclick="switchTab('music-mktg')">
           <i data-lucide="disc"></i> <span>Music Marketing Strategies</span>
         </button>
         <button class="nav-btn" data-tab="spec-ads" onclick="switchTab('spec-ads')">
           <i data-lucide="sparkles"></i> <span>Spec Ads</span>
-        </button>
-        <button class="nav-btn" data-tab="visual-dir" onclick="switchTab('visual-dir')">
-          <i data-lucide="camera"></i> <span>Visual Direction</span>
         </button>
         <button class="nav-btn" data-tab="about-skills" onclick="switchTab('about-skills')">
           <i data-lucide="user"></i> <span>About & Skills</span>
@@ -119,7 +119,7 @@
     <!-- ==================== TAB 1: MUSIC MARKETING STRATEGIES ==================== -->
     <section id="tab-music-mktg" class="tab-pane">
       <div class="section-header">
-        <div class="section-label">01 / MUSIC MARKETING & A&R</div>
+        <div class="section-label">02 / MUSIC MARKETING & A&R</div>
         <h2 class="section-title">Music Marketing Strategies</h2>
         <p class="section-desc">Tailored 360° artist marketing strategies, A&R scouting breakdowns, and custom Spotify playlist curation.</p>
       </div>
@@ -232,7 +232,7 @@
     <!-- ==================== TAB 2: SPEC ADS ==================== -->
     <section id="tab-spec-ads" class="tab-pane">
       <div class="section-header">
-        <div class="section-label">02 / BRAND MANAGEMENT & ADVERTISING</div>
+        <div class="section-label">03 / BRAND MANAGEMENT & ADVERTISING</div>
         <h2 class="section-title">Spec Ads</h2>
         <p class="section-desc">Comprehensive brand campaign pitch decks, cultural positioning blueprints, and projected ROI metrics.</p>
       </div>
@@ -281,13 +281,13 @@
     <!-- ==================== TAB 3: VISUAL DIRECTION (TREATMENTS & GRAPHIC DESIGNS) ==================== -->
     <section id="tab-visual-dir" class="tab-pane">
       <div class="section-header">
-        <div class="section-label">03 / DIRECTOR'S TREATMENTS, GRAPHIC DESIGN & VISUAL WORK</div>
+        <div class="section-label">01 / DIRECTOR'S TREATMENTS, GRAPHIC DESIGN & VISUAL WORK</div>
         <h2 class="section-title">Visual Direction</h2>
         <p class="section-desc">Commercial director's treatments, high-fashion style guides, original graphic design collateral, and editorial artwork by Nicole Charbit.</p>
       </div>
 
       <!-- Sub-Tab Category Navigation Bar -->
-      <div class="subnav-filter-bar" style="display:flex; justify-content:center; gap:12px; margin-bottom:32px;">
+      <div class="subnav-filter-bar">
         <button class="subnav-btn active" onclick="switchVisualSubTab('graphics', this)">
           <i data-lucide="image"></i> <span>Graphic Design</span>
         </button>
