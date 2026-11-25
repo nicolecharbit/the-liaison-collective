@@ -288,19 +288,19 @@
 
       <!-- Sub-Tab Category Navigation Bar -->
       <div class="subnav-filter-bar">
-        <button class="subnav-btn active" onclick="switchVisualSubTab('graphics', this)">
+        <button class="subnav-btn active" onclick="switchVisualSubTab('video', this)">
+          <i data-lucide="film"></i> <span>Video Editing</span>
+        </button>
+        <button class="subnav-btn" onclick="switchVisualSubTab('graphics', this)">
           <i data-lucide="image"></i> <span>Graphic Design</span>
         </button>
         <button class="subnav-btn" onclick="switchVisualSubTab('treatments', this)">
           <i data-lucide="clapperboard"></i> <span>Commercial Treatments</span>
         </button>
-        <button class="subnav-btn" onclick="switchVisualSubTab('video', this)">
-          <i data-lucide="film"></i> <span>Video Editing</span>
-        </button>
       </div>
 
       <!-- Sub-Tab Pane 1: Graphic Design -->
-      <div id="visual-subtab-graphics" style="display:block;">
+      <div id="visual-subtab-graphics" style="display:none;">
         <div class="visual-grid">
 
           <!-- Graphic 1 (LATEST): BC Football Red Bandanna Game Poster -->
@@ -639,13 +639,12 @@
         </div>
       </div>
 
-      <!-- Sub-Tab Pane 3: Video Editing -->
-      <div id="visual-subtab-video" style="display:none;">
+      <!-- Sub-Tab Pane 3: Video Editing (shown first by default) -->
+      <div id="visual-subtab-video" style="display:block;">
         <div class="video-feature-card">
-          <a class="video-cover-link" id="video-editing-cover" href="https://drive.google.com/file/d/1zWuPi-xUDAvcmrjRtWju6RcrdGQnZu9A/view?usp=sharing" target="_blank" rel="noopener" aria-label="Watch Nicole Charbit's video editing reel on Google Drive">
+          <div class="video-cover">
             <img src="video_editing_cover.jpg" alt="Video editing reel cover: layered collage of deer grazing by a fence with the title The universe" />
-            <span class="video-play-btn"><i data-lucide="play"></i></span>
-          </a>
+          </div>
           <div class="video-feature-body">
             <div class="section-label">VIDEO EDITING REEL</div>
             <h3 class="video-feature-title">The Universe</h3>

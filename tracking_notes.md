@@ -47,9 +47,9 @@
 [The Liaison Collective Header]
  ├── Tab 1: Home (#tab-home)
  ├── Tab 2: Visual Direction (#tab-visual-dir)  [moved to first content tab - Nov 25, 2026]
- │     ├── Sub-Tab 1: Graphic Design (#visual-subtab-graphics) -> Active First by Default
- │     ├── Sub-Tab 2: Commercial Treatments (#visual-subtab-treatments) -> Arc'teryx x Arsenal
- │     └── Sub-Tab 3: Video Editing (#visual-subtab-video) -> "The Universe" reel (Google Drive link)
+ │     ├── Sub-Tab 1: Video Editing (#visual-subtab-video) -> Active First by Default; "The Universe" reel (Google Drive link)
+ │     ├── Sub-Tab 2: Graphic Design (#visual-subtab-graphics)
+ │     └── Sub-Tab 3: Commercial Treatments (#visual-subtab-treatments) -> Arc'teryx x Arsenal
  ├── Tab 3: Music Marketing Strategies (#tab-music-mktg)
  ├── Tab 4: Spec Ads (#tab-spec-ads)
  └── Tab 5: About & Skills (#tab-about-skills)
@@ -169,4 +169,8 @@ When starting a new conversation session:
   * Cover and "Watch the Full Clip" button open Google Drive in a new tab: `https://drive.google.com/file/d/1zWuPi-xUDAvcmrjRtWju6RcrdGQnZu9A/view?usp=sharing` (Drive file must stay shared as "Anyone with the link").
   * `switchVisualSubTab()` in app.js generalized to a `panes` map (graphics / treatments / video).
   * Mobile: `.subnav-btn` uses `flex: 1 1 auto` so the 3 sub-tabs wrap cleanly; smaller play button + title.
+* **November 25, 2026**: Video Editing tweaks:
+  * Sub-tab order is now **Video Editing -> Graphic Design -> Commercial Treatments**; Video Editing is active/visible by default (graphics pane starts `display:none`).
+  * Removed the play-button overlay from the cover. Cover is now a plain non-clickable `.video-cover` image; the **"Watch the Full Clip"** button is the only link to the Drive video.
+  * Sub-tabs made smaller (still bold + uppercase): desktop `0.82rem`, `10px 22px` padding, 16px icons; mobile `0.72rem`, `9px 12px` padding, 14px icons.
 
