@@ -47,7 +47,7 @@
 [The Liaison Collective Header]
  ├── Tab 1: Home (#tab-home)
  ├── Tab 2: Visual Direction (#tab-visual-dir)  [moved to first content tab - Nov 25, 2026]
- │     ├── Sub-Tab 1: Video Editing (#visual-subtab-video) -> Active First by Default; "The Universe" reel (Google Drive link)
+ │     ├── Sub-Tab 1: Video Editing (#visual-subtab-video) -> Active First by Default; "The Universe Through My Eyes" reel (Google Drive link)
  │     ├── Sub-Tab 2: Graphic Design (#visual-subtab-graphics)
  │     └── Sub-Tab 3: Commercial Treatments (#visual-subtab-treatments) -> Arc'teryx x Arsenal
  ├── Tab 3: Music Marketing Strategies (#tab-music-mktg)
@@ -173,4 +173,5 @@ When starting a new conversation session:
   * Sub-tab order is now **Video Editing -> Graphic Design -> Commercial Treatments**; Video Editing is active/visible by default (graphics pane starts `display:none`).
   * Removed the play-button overlay from the cover. Cover is now a plain non-clickable `.video-cover` image; the **"Watch the Full Clip"** button is the only link to the Drive video.
   * Sub-tabs made smaller (still bold + uppercase): desktop `0.82rem`, `10px 22px` padding, 16px icons; mobile `0.72rem`, `9px 12px` padding, 14px icons.
+  * Video title changed from "The Universe" to **"The Universe Through My Eyes"**.
 
