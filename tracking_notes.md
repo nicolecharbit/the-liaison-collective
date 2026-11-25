@@ -48,7 +48,8 @@
  ├── Tab 1: Home (#tab-home)
  ├── Tab 2: Visual Direction (#tab-visual-dir)  [moved to first content tab - Nov 25, 2026]
  │     ├── Sub-Tab 1: Graphic Design (#visual-subtab-graphics) -> Active First by Default
- │     └── Sub-Tab 2: Commercial Treatments (#visual-subtab-treatments) -> Arc'teryx x Arsenal
+ │     ├── Sub-Tab 2: Commercial Treatments (#visual-subtab-treatments) -> Arc'teryx x Arsenal
+ │     └── Sub-Tab 3: Video Editing (#visual-subtab-video) -> "The Universe" reel (Google Drive link)
  ├── Tab 3: Music Marketing Strategies (#tab-music-mktg)
  ├── Tab 4: Spec Ads (#tab-spec-ads)
  └── Tab 5: About & Skills (#tab-about-skills)
@@ -163,4 +164,9 @@ When starting a new conversation session:
   * Section labels renumbered: Visual Direction `01`, Music Marketing `02`, Spec Ads `03`, About `04`.
   * `.subnav-btn` (styles.css): uppercase, `font-weight: 700` (active `800`), `1rem`, `14px 32px` padding, white bg + 1.5px charcoal border when inactive, hover lift. Mobile: `0.8rem`, `12px 14px` padding.
   * Removed inline style from `.subnav-filter-bar` in index.html (CSS file now controls spacing). Added Jost weight `800` to Google Fonts link.
+* **November 25, 2026**: Added Sub-Tab 3 **Video Editing** (`#visual-subtab-video`, Lucide `film` icon):
+  * `.video-feature-card` with 16:9 cover `video_editing_cover.jpg` (deer collage still, "The universe" title) + frosted play button overlay.
+  * Cover and "Watch the Full Clip" button open Google Drive in a new tab: `https://drive.google.com/file/d/1zWuPi-xUDAvcmrjRtWju6RcrdGQnZu9A/view?usp=sharing` (Drive file must stay shared as "Anyone with the link").
+  * `switchVisualSubTab()` in app.js generalized to a `panes` map (graphics / treatments / video).
+  * Mobile: `.subnav-btn` uses `flex: 1 1 auto` so the 3 sub-tabs wrap cleanly; smaller play button + title.
 

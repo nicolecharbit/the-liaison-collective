@@ -299,19 +299,21 @@ function switchVisualSubTab(subTabId, btnEl) {
   allBtns.forEach(b => b.classList.remove('active'));
   if (btnEl) btnEl.classList.add('active');
 
-  const treatmentsPane = document.getElementById('visual-subtab-treatments');
-  const graphicsPane = document.getElementById('visual-subtab-graphics');
+  const panes = {
+    graphics: document.getElementById('visual-subtab-graphics'),
+    treatments: document.getElementById('visual-subtab-treatments'),
+    video: document.getElementById('visual-subtab-video')
+  };
   const coverCard = document.getElementById('treatment-cover-card');
   const fullDeck = document.getElementById('treatment-full-deck');
 
+  Object.keys(panes).forEach(key => {
+    if (panes[key]) panes[key].style.display = (key === subTabId) ? 'block' : 'none';
+  });
+
   if (subTabId === 'treatments') {
-    if (treatmentsPane) treatmentsPane.style.display = 'block';
-    if (graphicsPane) graphicsPane.style.display = 'none';
     if (coverCard) coverCard.style.display = 'block';
     if (fullDeck) fullDeck.style.display = 'none';
-  } else {
-    if (treatmentsPane) treatmentsPane.style.display = 'none';
-    if (graphicsPane) graphicsPane.style.display = 'block';
   }
 }
 
