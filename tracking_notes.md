@@ -174,4 +174,5 @@ When starting a new conversation session:
   * Removed the play-button overlay from the cover. Cover is now a plain non-clickable `.video-cover` image; the **"Watch the Full Clip"** button is the only link to the Drive video.
   * Sub-tabs made smaller (still bold + uppercase): desktop `0.82rem`, `10px 22px` padding, 16px icons; mobile `0.72rem`, `9px 12px` padding, 14px icons.
   * Video title changed from "The Universe" to **"The Universe Through My Eyes"**.
+  * Sub-tabs shrunk again (still bold + uppercase): desktop `0.7rem`, `7px 16px` padding, 13px icons; mobile `0.64rem`, `7px 10px` padding, 12px icons.
 

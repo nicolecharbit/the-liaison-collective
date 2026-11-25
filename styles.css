@@ -135,19 +135,19 @@ body {
 .subnav-btn {
   background: var(--bg-card);
   border: 1.5px solid var(--text-main);
-  padding: 10px 22px;
+  padding: 7px 16px;
   border-radius: 40px;
   font-family: var(--font-sans);
-  font-size: 0.82rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-main);
   cursor: pointer;
   transition: all 0.25s ease;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .subnav-btn:hover {
@@ -165,8 +165,8 @@ body {
 }
 
 .subnav-btn i {
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
 }
 
 .subnav-btn.active i {
@@ -920,18 +920,18 @@ body {
   }
 
   .subnav-btn {
-    padding: 9px 12px;
-    font-size: 0.72rem;
+    padding: 7px 10px;
+    font-size: 0.64rem;
     letter-spacing: 0.04em;
-    gap: 6px;
+    gap: 5px;
     flex: 1 1 auto;
     text-align: center;
     justify-content: center;
   }
 
   .subnav-btn i {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
 
   .video-feature-body {
